@@ -48,6 +48,5 @@ define openvpn::revoke (
     command  => $renew_command,
     cwd      => "${openvpn::server_directory}/${server}/easy-rsa",
     provider => 'shell',
-    #schedule => "renew crl.pem schedule on ${server}",
   }
 }
